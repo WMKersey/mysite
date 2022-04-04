@@ -76,10 +76,6 @@ h2 {
 
 /* >> Body << */
 
-#background {
-	background-image: url("../images/background.png");
-}
-
 body {
 	background-color: rgb(13, 13, 46);
 	background-image: url("../images/background.PNG");
