@@ -76,10 +76,6 @@ h2 {
 
 /* >> Body << */
 
-#background {
-	background-image: url("../images/background.png");
-}
-
 body {
 	background-color: rgb(13, 13, 46);
 	background-image: url("../images/background.PNG");
@@ -122,7 +118,7 @@ p style {
 }
 
 #art {
-	background-image: url("../images/contact.jpg");
+	background-image: url("../images/contact.JPG");
 	background-repeat: no-repeat;
 	/* background-color: #6699FF; */
 	position: relative;
@@ -131,7 +127,7 @@ p style {
 }
 
 #bio {
-	background-image: url("../images/bio.jpg");
+	background-image: url("../images/bio.JPG");
 	background-repeat: no-repeat;
 	/* background-color: #6699FF; */
 	position: relative;
@@ -140,7 +136,7 @@ p style {
 }
 
 #cosplay {
-	background-image: url("../images/cosplay.jpg");
+	background-image: url("../images/cosplay.JPG");
 	background-repeat: no-repeat;
 	/* background-color: #6699FF; */
 	position: relative;
@@ -149,7 +145,7 @@ p style {
 }
 
 #shop {
-	background-image: url("../images/shop.png");
+	background-image: url("../images/shop.PNG");
 	background-repeat: no-repeat;
 	/* background-color: #6699FF; */
 	position: relative;
@@ -158,7 +154,7 @@ p style {
 }
 
 #socialmedia {
-	background-image: url("../images/social-media.jpg");
+	background-image: url("../images/social-media.JPG");
 	background-repeat: no-repeat;
 	/* background-color: #6699FF; */
 	position: relative;
@@ -167,7 +163,7 @@ p style {
 }
 
 #tutorials {
-	background-image: url("../images/tutorials.png");
+	background-image: url("../images/tutorials.PNG");
 	background-repeat: no-repeat;
 	/* background-color: #6699FF; */
 	position: relative;
@@ -203,10 +199,8 @@ footer a:visited {
 /* >> Mobile/Responsive << */
 
 @media screen and (max-width: 767px) {
-    body {
-        background-image: url("../images/background.png");
-    }
-	nav {
+
+nav {
 		grid-template-columns: 1fr 1fr;
 		/* padding: 5.5rem;
 		column-gap: 7rem;
@@ -216,10 +210,8 @@ footer a:visited {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        background-image: url("../images/background.png");
-    }
-	nav {
+   
+nav {
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		/* padding: 5.5rem;
@@ -236,10 +228,7 @@ footer a:visited {
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1279px) {
-    body {
-        background-image: url("../images/background.png");
-    }
-	.imagenav section {
+.imagenav section {
 		flex-basis: 100%;
 	}
 	nav {
