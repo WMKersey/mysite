@@ -1,0 +1,209 @@
+/* Reset Style Rule */
+/* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+} */
+
+/* >> Header << */
+
+header {
+	position: relative;
+}
+
+/* @font-face {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	src: url("../")
+} */
+
+h1.banner {
+	color: white;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+h2.subbanner {
+	color: #6699FF;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+	height: 70px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	color: white;
+	text-align: left;
+	font-family: cursive;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	font-family: cursive;
+}
+
+.mainnav {
+    position: relative;
+	background-color: rgb(30, 30, 94);
+	z-index: 999;
+	width: 40%;
+	padding: 2%;
+}
+
+#icon {
+	color: white;
+	font-size: 2rem;
+	padding: .5rem;
+	cursor: pointer;
+}
+
+#checkbox {
+	display: none;
+}
+
+.mainnav ul {
+	position: relative;
+	z-index: 999;
+	display: none;
+}
+
+#checkbox:checked~ul {
+	display: block;
+}
+
+/* >> Body << */
+
+#background {
+	background-image: url("../images/background.png");
+}
+
+body {
+	background-color: rgb(13, 13, 46);
+	background-image: url("../images/background.PNG");
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	color: white;
+	font-size: 40px;
+	list-style-type: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 5.5rem;
+	display: grid;
+	/* min height, padding */
+	grid-template-columns: 1fr 1fr 1fr;
+	/* grid-template-rows: 200px 200px; */
+	column-gap: 7rem;
+	row-gap: 2rem;
+/*	position: sticky; */
+}
+
+h3.nav {
+	color: white;
+	text-decoration: none;
+	font: 25px aladin, DejaVu Sans, Trebuchet MS, Verdana, Garamond, georgia, arial;
+}
+
+nav a:link {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: lightblue;
+}
+
+p style {
+	color: white;
+}
+
+p {
+	color: white;
+}
+
+.right {
+    background-image: url("../images/douxiecosplay.jpg");
+	background-repeat: no-repeat;
+    float: right;
+    padding: 7rem;
+}
+
+/* >> Footer << */
+
+footer {
+	color: white;
+	text-align: center;
+}
+
+footer a:link {
+	color: white;
+}
+
+footer a:visited {
+	color: lightblue;
+}
+
+/* background clip, position, size, origin (position x & y ) */
+
+/* .grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5rem; 
+	align-items: center;
+}
+*/
+
+/* >> Mobile/Responsive << */
+
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url("../images/background.png");
+    }
+	nav {
+		grid-template-columns: 1fr 1fr;
+		/* padding: 5.5rem;
+		column-gap: 7rem;
+		row-gap: 2rem; */
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url("../images/background.png");
+    }
+	nav {
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		/* padding: 5.5rem;
+		column-gap: 10rem;
+		row-gap: 3rem; */
+	}
+	/* .mainnav {
+		width: 40%;
+		max-height: 75px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	} */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+    body {
+        background-image: url("../images/background.png");
+    }
+	.imagenav section {
+		flex-basis: 100%;
+	}
+	nav {
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: center;
+		/* padding: 5.5rem;
+		column-gap: 13rem;
+		row-gap: 3rem; */
+	}
+}
