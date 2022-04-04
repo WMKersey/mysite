@@ -155,12 +155,9 @@ footer a:visited {
 
 /* >> Mobile/Responsive << */
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
 nav {
 		grid-template-columns: 1fr 1fr;
-		/* padding: 5.5rem;
-		column-gap: 7rem;
-		row-gap: 2rem; */
 		align-items: center;
 	}
 }
@@ -169,17 +166,7 @@ nav {
 nav {
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
-		/* padding: 5.5rem;
-		column-gap: 10rem;
-		row-gap: 3rem; */
 	}
-	/* .mainnav {
-		width: 40%;
-		max-height: 75px;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-	} */
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1279px) {
@@ -189,8 +176,5 @@ nav {
 	nav {
 		grid-template-columns: 1fr 1fr 1fr;
 		align-items: center;
-		/* padding: 5.5rem;
-		column-gap: 13rem;
-		row-gap: 3rem; */
 	}
-}
+} */
