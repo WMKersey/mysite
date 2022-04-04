@@ -122,7 +122,7 @@ p style {
 }
 
 #art {
-	background-image: url("../images/contact.jpg");
+	background-image: url(../images/contact.jpg);
 	background-repeat: no-repeat;
 	/* background-color: #6699FF; */
 	position: relative;
