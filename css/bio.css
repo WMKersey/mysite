@@ -156,10 +156,7 @@ footer a:visited {
 /* >> Mobile/Responsive << */
 
 @media screen and (max-width: 767px) {
-    body {
-        background-image: url("../images/background.png");
-    }
-	nav {
+nav {
 		grid-template-columns: 1fr 1fr;
 		/* padding: 5.5rem;
 		column-gap: 7rem;
@@ -169,10 +166,7 @@ footer a:visited {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        background-image: url("../images/background.png");
-    }
-	nav {
+nav {
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		/* padding: 5.5rem;
@@ -189,10 +183,7 @@ footer a:visited {
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1279px) {
-    body {
-        background-image: url("../images/background.png");
-    }
-	.imagenav section {
+.imagenav section {
 		flex-basis: 100%;
 	}
 	nav {
