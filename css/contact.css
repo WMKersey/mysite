@@ -1,0 +1,134 @@
+/* Reset Style Rule */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+} 
+
+/* Body Styles */
+
+body {
+	background-color: rgb(13, 13, 46);
+	background-image: url("../images/background.PNG");
+	width: 100%;
+	height: 100%;
+}
+
+/* Header Styles */
+
+header {
+    height: 60px;
+    background-color: rgba(128, 128, 128, .5);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Main Navigation (Hamburger Menu) */
+
+.mainnav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 3fr;
+    grid-template-areas:
+    "hamburger name-tag name-tag name-tag"
+    "menu menu menu menu";
+}
+
+#checkbox {
+	display: none;
+}
+
+/* Change the background color of the hamburger menu. You will also notice that the icon
+has been assigned the grid area of hamburger as listed in the .mainnav. */
+#icon {
+	color: white;
+    background-color: rgba(108, 108, 214, .5);
+	font-size: 2rem;
+	padding: .5rem;
+	cursor: pointer;
+    grid-area: hamburger;
+    place-self: center;
+}
+
+/* Style the business name and tagline. The grid area of 'name-tag' (as indicated in the .mainnav) 
+has been assigned here. This div is also centered in the nav. Note: You will need to apply the actual fonts
+you have selected for your site to these style rules. */
+.name-tag {
+    grid-area: name-tag;
+    place-self: center;
+}
+
+.name-tag h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.name-tag h2 {
+    color: white;
+    font-size: .75rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/* Style the unordered list for mobile. The grid area (menu) is assigned, this item is aligned to the end
+of the grid, the list is hidden and the z-index is increased so that this remains on top of all other content.*/
+.mainnav ul {
+    background-color:rgba(60, 75, 143, 0.966);
+    grid-area: menu;
+    align-self: end;
+    display: none;
+    z-index: 999;
+}
+
+.mainnav ul li {
+    list-style-type: none;
+    padding: 5%;
+}
+
+.mainnav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#checkbox:checked~ul {
+	display: block;
+}
+
+/* Contact Box */
+
+h1.contact {
+	color: white;
+	text-align: left;
+	font-family: cursive;
+    padding-left: 1.5rem;
+}
+
+form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+	background-color: #4c70b9a1;
+	width: 40%;
+	position: relative;
+	padding: 2rem;
+}
+
+/* >> Footer << */
+
+footer {
+	color: white;
+	text-align: center;
+    background-color: #0614308e;
+    padding: 2rem;
+    font-size: .7rem;
+}
+
+/* footer a:link {
+	color: lightblue;
+}
+
+footer a:visited {
+	color: blue;
+} */
