@@ -91,6 +91,7 @@ of the grid, the list is hidden and the z-index is increased so that this remain
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #checkbox:checked~ul {
@@ -115,6 +116,13 @@ form {
 	padding: 2rem;
 }
 
+button {
+    background-color: rgba(33, 33, 151, 0.889);
+	color: aliceblue;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: .5rem;
+}
+
 /* >> Footer << */
 
 footer {
@@ -135,8 +143,6 @@ footer a:visited {
 
 @media screen and (min-width: 1025px) {
 
-/* desktop responsiveness WIP */
-
 nav {
     background-color: rgba(128, 128, 128, .5);
     height: 4rem;
@@ -145,16 +151,33 @@ nav {
 
     }
 
-header {
-        height: 80px;
-        background-color: #1228548e;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-    }
-    
-ul {
+.mainnav ul {
+    float: left;
     text-align: center;
+    font-size: .5rem;
+    margin: 0;
+    padding: 0;
+    display: contents;
+    /* display: inline; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* .mainnav a {
+    display: block;
+    padding: 3rem;
+    background-color: #1228548e;
+} */
+
+header {
+    height: 80px;
+    background-color: #1228548e;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    }
+
+#icon {
+		display: none;
 }
 
 }
