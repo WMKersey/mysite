@@ -5,24 +5,43 @@
 	<link rel="stylesheet" href= "css/mainpagecss.css" type="text/css" />
 	<title>White Island Snow</title>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+	<dialog open>
+		<p>NEXT CON: Tidewater Comic Con!</p>
+		<p>Sunday, May 15th in VA Beach!</p>
+		<p>Come by and look for me!</p>
+		<!-- ERROR "bad value 'dialog' for attribute 'method' on element 'form'." ?? 
+		I followed the W3 instructions, so I'm not sure why this isn't validating... -->
+		<form method="dialog">
+			<button>Awesome!!!</button>
+		</form>
+		<!-- Js where pop-up box only comes up once per visit -->
+	</dialog>
 	<header>
-			<nav class="mainnav">
-				<input type="checkbox" id="checkbox" />
-				<label for ="checkbox" id="icon">&#9776;</label>
-				<ul>
-					<li><a href="#">Comic Cons</a></li>
-					<li><a href="#">Site Map</a></li>
-					<li><a href="#">Comissions</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Shop Policies</a></li>
-				</ul>
-		</nav>
-		<!-- <div id="hamburger">&#9776;</div> -->
-		<h1 class="banner">White Island Snow</h1>
-		<h2 class="subbanner">The Official, One-Stop Website for Whitney K.</h2>
+    <!-- Navigation -->
+    <nav class="mainnav">
+        <!-- Checkbox hack-->
+        <input type="checkbox" id="checkbox" />
+        <label for ="checkbox" id="icon">&#9776;</label>
+        <!-- Main heading and tagline -->
+        <div class="name-tag">
+            <h1>White Island Snow</h1>
+            <h2>The Official, One-Stop Website for Whitney K.</h2>
+        </div>
+        <!-- Menu items -->
+        <ul>
+		<!-- Only operational pages are listed. 
+		More will be added (eg Social Media & Shop) later. -->
+            <li><a href="index.html">Home Page</a></li>
+			<li><a href="bio.html">Bio</a></li>
+			<li><a href="cosplay.html">Cosplay</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="tutorials.html">Tutorials</a></li>
+        </ul>
+    </nav>
 	</header>
 	
 	<!-- main section includes navigation. -->
@@ -35,7 +54,7 @@
 				<section id="tutorials"><h3 class="nav"><a href="tutorials.html">Tutorials</a></h3></section>
 				<section id="shop"><h3 class="nav"><a href="shop.html">Shop</a></h3></section>
 				<section id="socialmedia"><h3 class="nav"><a href="social-media.html">Social Media</a></h3></section>
-				<section id="art"><h3 class="nav"><a href="art.html">Contact</a></h3></section>
+				<section id="art"><h3 class="nav"><a href="contact.html">Contact</a></h3></section>
 		</nav>
 	</main>	
 	<!-- The footer includes Copyright, website design credit, and plug-in/widget information such as Google Translate and Shopify. -->

@@ -51,6 +51,7 @@ function checkValues() {
         console.log("There is nothing here -->" + firstNameValue);
         firstName.style.backgroundColor = "yellow";
         fNameError.innerText = "I gotta to know your first name!";
+        fNameError.style.color = "aquamarine";
     } else if((firstNameValue !== "") && (fNameError.innerText !== "")) {
         console.log("This is the first name --> " + firstNameValue);
         firstName.style.backgroundColor = "white";
@@ -61,6 +62,7 @@ function checkValues() {
     if(emailValue == "") {
         emailAddress.style.backgroundColor = "yellow";
         emailError.innerText = "I can't respond without your email!";
+        emailError.style.color = "aquamarine";
     } else if((emailValue !== "") && (emailError.innerText !== "")) {
         emailAddress.style.backgroundColor = "white";
         emailError.innerText = "";
@@ -73,6 +75,7 @@ function checkValues() {
     if(messageValue == "") {
         message.style.backgroundColor = "yellow";
         messageError.innerText = "Wait! Aren't you wanting to ask me something?";
+        messageError.style.color = "aquamarine";
     } else if((messageValue !== "") && (messageError.innerText !== "")) {
         message.style.backgroundColor = "white";
         messageError.innerText = "";
