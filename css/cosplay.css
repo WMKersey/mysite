@@ -1,0 +1,363 @@
+/* Reset Style Rule */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+} 
+
+/* Body Styles */
+
+body {
+	background-color: rgb(13, 13, 46);
+	background-image: url("../images/background.PNG");
+	width: 100%;
+	height: 100%;
+}
+
+/* Header Styles */
+
+header {
+    height: 60px;
+    background-color: rgba(128, 128, 128, .5);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Main Navigation (Hamburger Menu) */
+
+.mainnav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 3fr;
+    grid-template-areas:
+    "hamburger name-tag name-tag name-tag"
+    "menu menu menu menu";
+}
+
+#checkbox {
+	display: none;
+}
+
+/* Change the background color of the hamburger menu. You will also notice that the icon
+has been assigned the grid area of hamburger as listed in the .mainnav. */
+#icon {
+	color: white;
+    background-color: rgba(108, 108, 214, .5);
+	font-size: 2rem;
+	padding: .5rem;
+	cursor: pointer;
+    grid-area: hamburger;
+    place-self: center;
+}
+
+/* Style the business name and tagline. The grid area of 'name-tag' (as indicated in the .mainnav) 
+has been assigned here. This div is also centered in the nav. Note: You will need to apply the actual fonts
+you have selected for your site to these style rules. */
+.name-tag {
+    grid-area: name-tag;
+    place-self: center;
+}
+
+.name-tag h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.name-tag h2 {
+    color: white;
+    font-size: .75rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/* Style the unordered list for mobile. The grid area (menu) is assigned, this item is aligned to the end
+of the grid, the list is hidden and the z-index is increased so that this remains on top of all other content.*/
+.mainnav ul {
+    background-color:rgba(60, 75, 143, 0.966);
+    grid-area: menu;
+    align-self: end;
+    display: none;
+    z-index: 999;
+    width: 70%;
+}
+
+.mainnav ul li {
+    list-style-type: none;
+    padding: 5%;
+}
+
+.mainnav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#checkbox:checked~ul {
+	display: block;
+}
+
+h1.cosplay {
+    color: white;
+	text-align: left;
+	font-family: cursive;
+    padding-left: 1.5rem;
+}
+
+/* }}}---->>> Image Navigation <<<----{{{ */
+
+.imagenav {
+    list-style-type: none;
+	padding: 5.5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 4rem;
+	row-gap: 3rem;
+    }
+    
+h3.nav {
+        color: white;
+        text-decoration: none;
+        font: 25px aladin, DejaVu Sans, Trebuchet MS, Verdana, Garamond, georgia, arial;
+        text-shadow: 0 0 20px rgb(3, 12, 36);
+        font-weight: bold;
+    }
+    
+.imagenav a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+.imagenav a:hover {
+        color: lightblue;
+    }
+    
+p style {
+        color: white;
+    }
+
+#rayla {
+	background-image: url("../images/raylacosplay.jpg");
+	background-repeat: no-repeat;
+    height: 130px;
+    width: 12rem;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center; 
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#rayla h3 {
+    margin-top: 30%;
+}
+
+#zuko {
+	background-image: url("../images/zukocosplay.jpg");
+	background-repeat: no-repeat;
+    height: 140px;
+    width: 12rem;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#zuko h3 {
+    margin-top: 30%;
+}
+
+#apprentice {
+	background-image: url("../images/apprenticecosplay.jpg");
+	background-repeat: no-repeat;
+    height: 135px;
+    width: 12rem;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#apprentice h3 {
+    margin-top: 30%;
+}
+
+#keith {
+	background-image: url("../images/keithcosplay.jpg");
+	background-repeat: no-repeat;
+    height: 125px;
+    width: 12rem;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#keith h3 {
+    margin-top: 30%;
+}
+
+#loki {
+	background-image: url("../images/lokicosplay.jpg");
+	background-repeat: no-repeat;
+    height: 140px;
+    width: 12rem;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#loki h3 {
+    margin-top: 30%;
+}
+
+#elsa {
+	background-image: url("../images/elsacosplay.jpg");
+	background-repeat: no-repeat;
+    height: 140px;
+    width: 12rem;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#elsa h3 {
+    margin-top: 30%;
+}
+
+#douxie {
+	background-image: url("../images/douxiecosplay.jpg");
+	background-repeat: no-repeat;
+    height: 140px;
+    width: 12rem;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center; 
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#douxie h3 {
+    margin-top: 30%;
+}
+
+#tamaki {
+	background-image: url("../images/suneatercosplay.jpg");
+	background-repeat: no-repeat;
+    height: 125px;
+    width: 12rem;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center; 
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#tamaki h3 {
+    margin-top: 30%;
+}
+
+/* }}}---->>> Footer <<<----{{{ */
+
+footer {
+	color: white;
+	text-align: center;
+    background-color: #0614308e;
+    padding: 2rem;
+    font-size: .7rem;
+}
+
+/* footer a:link {
+	color: lightblue;
+}
+
+footer a:visited {
+	color: blue;
+} */
+
+/* }}}---->>> Mobile Layouts <<<----{{{ */
+
+@media screen and (max-width: 767px) {
+
+    .imagenav {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+       
+    .imagenav {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+    }
+    
+    @media screen and (min-width: 1025px) and (max-width: 1279px) {
+    .imagenav section {
+            flex-basis: 100%;
+        }
+        nav {
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+        }
+    }
+
+/* }}}---->>> DESKTOP RESPONSIVENESS <<<----{{{ */
+
+@media screen and (min-width: 1025px) {
+
+        #checkbox:checked~ul {
+            display: none;
+        }
+        
+        #icon {
+            display: none;
+        }
+        
+        .mainnav {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 40px 5fr;
+            grid-template-areas:
+            "name-tag name-tag name-tag name-tag name-tag"
+            "menu menu menu menu menu";
+        }
+        
+        .mainnav ul {
+            background-color:#1228548e;
+            /* outline: 1px solid red; */
+            width: 100%;
+            margin-top: 6px;;
+            display: contents;
+            display: grid;
+        }
+        
+        .mainnav ul li {
+            grid-area: menu;
+            height: 1px;
+            list-style-type: none;
+            margin-top: -4%;
+        }
+        
+        .mainnav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        h1.cosplay {
+            margin-top: 2rem;
+        }
+        
+    }

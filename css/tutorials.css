@@ -1,0 +1,369 @@
+/* Reset Style Rule */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+} 
+
+/* Body Styles */
+
+body {
+	background-color: rgb(13, 13, 46);
+	background-image: url("../images/background.PNG");
+	width: 100%;
+	height: 100%;
+}
+
+/* Header Styles */
+
+header {
+    height: 60px;
+    background-color: rgba(128, 128, 128, .5);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Main Navigation (Hamburger Menu) */
+
+.mainnav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 3fr;
+    grid-template-areas:
+    "hamburger name-tag name-tag name-tag"
+    "menu menu menu menu";
+}
+
+#checkbox {
+	display: none;
+}
+
+/* Change the background color of the hamburger menu. You will also notice that the icon
+has been assigned the grid area of hamburger as listed in the .mainnav. */
+#icon {
+	color: white;
+    background-color: rgba(108, 108, 214, .5);
+	font-size: 2rem;
+	padding: .5rem;
+	cursor: pointer;
+    grid-area: hamburger;
+    place-self: center;
+}
+
+/* Style the business name and tagline. The grid area of 'name-tag' (as indicated in the .mainnav) 
+has been assigned here. This div is also centered in the nav. Note: You will need to apply the actual fonts
+you have selected for your site to these style rules. */
+.name-tag {
+    grid-area: name-tag;
+    place-self: center;
+}
+
+.name-tag h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.name-tag h2 {
+    color: white;
+    font-size: .75rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/* Style the unordered list for mobile. The grid area (menu) is assigned, this item is aligned to the end
+of the grid, the list is hidden and the z-index is increased so that this remains on top of all other content.*/
+.mainnav ul {
+    background-color:rgba(60, 75, 143, 0.966);
+    grid-area: menu;
+    align-self: end;
+    display: none;
+    z-index: 999;
+    width: 70%;
+}
+
+.mainnav ul li {
+    list-style-type: none;
+    padding: 5%;
+}
+
+.mainnav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#checkbox:checked~ul {
+	display: block;
+}
+
+h1.tutorials {
+    color: white;
+	text-align: left;
+	font-family: cursive;
+    padding-left: 1.5rem;
+}
+
+/* }}}---->>> Image Navigation <<<----{{{ */
+
+.imagenav {
+        list-style-type: none;
+        padding: 5.5rem;
+        display: grid;
+        /* min height, padding */
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 4rem;
+        row-gap: 3rem;
+    }
+    
+h3.nav {
+        color: white;
+        text-decoration: none;
+        font: 30px aladin, DejaVu Sans, Trebuchet MS, Verdana, Garamond, georgia, arial;
+        text-shadow: 0 0 20px rgb(3, 12, 36);
+        font-weight: bold;
+    }
+    
+.imagenav a:link {
+    color: white;
+    text-decoration: none;
+}
+    
+.imagenav a:hover {
+    color: rgb(173, 176, 230);
+}
+    
+.imagenav a:visited {
+    color: rgba(145, 221, 215, 0.966)
+}
+    
+    
+p style {
+        color: white;
+    }
+
+#masks {
+	background-image: url("../images/maskstutorial.jpg");
+    height: 135px;
+    width: 12rem;
+	background-repeat: no-repeat;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center; 
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#masks h3 {
+    margin-top: 30%;
+}
+
+#wigs {
+	background-image: url("../images/wigstutorial.png");
+    height: 135px;
+    width: 12rem;
+	background-repeat: no-repeat;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#wigs h3 {
+    margin-top: 30%;
+}
+
+#horns {
+	background-image: url("../images/hornstutorial.jpg");
+    height: 125px;
+    width: 12rem;
+	background-repeat: no-repeat;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#horns h3 {
+    margin-top: 30%;
+}
+
+#patterns {
+	background-image: url("../images/patternstutorial.jpg");
+    height: 130px;
+    width: 12rem;
+	background-repeat: no-repeat;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#patterns h3 {
+    margin-top: 30%;
+}
+
+#armor {
+	background-image: url("../images/armortutorial.jpg");
+    height: 135px;
+    width: 12rem;
+	background-repeat: no-repeat;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#armor h3 {
+    margin-top: 30%;
+}
+
+#puppets {
+	background-image: url("../images/puppetstutorial.jpg");
+    height: 130px;
+    width: 12rem;
+	background-repeat: no-repeat;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#puppets h3 {
+    margin-top: 30%;
+}
+
+#weapons {
+	background-image: url("../images/weaponstutorial.jpg");
+    height: 130px;
+    width: 12rem;
+	background-repeat: no-repeat;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center; 
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#weapons h3 {
+    margin-top: 30%;
+}
+
+#props {
+	background-image: url("../images/propstutorial.jpg");
+    height: 125px;
+    width: 12rem;
+	background-repeat: no-repeat;
+	/* background-color: #6699FF; */
+	position: relative;
+	text-align: center; 
+	text-decoration: none;
+    box-shadow: 15px 15px rgba(62, 62, 148, 0.323);
+}
+
+#props h3 {
+    margin-top: 30%;
+}
+
+/* }}}---->>> Footer <<<----{{{ */
+
+footer {
+	color: white;
+	text-align: center;
+    background-color: #0614308e;
+    padding: 2rem;
+    font-size: .7rem;
+}
+
+/* footer a:link {
+	color: lightblue;
+}
+
+footer a:visited {
+	color: blue;
+} */
+
+/* }}}---->>> Mobile Layouts <<<----{{{ */
+
+@media screen and (max-width: 767px) {
+
+    .imagenav {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+}
+    
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+       
+    .imagenav {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+}
+    
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+    .imagenav section {
+            flex-basis: 100%;
+        }
+        .imagenav {
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+        }
+}
+
+/* }}}---->>> DESKTOP RESPONSIVENESS <<<----{{{ */
+
+@media screen and (min-width: 1025px) {
+
+    #checkbox:checked~ul {
+        display: none;
+    }
+    
+    #icon {
+        display: none;
+    }
+    
+    .mainnav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40px 5fr;
+        grid-template-areas:
+        "name-tag name-tag name-tag name-tag name-tag"
+        "menu menu menu menu menu";
+    }
+    
+    .mainnav ul {
+        background-color:#1228548e;
+        /* outline: 1px solid red; */
+        width: 100%;
+        margin-top: 6px;;
+        display: contents;
+        display: grid;
+    }
+    
+    .mainnav ul li {
+        grid-area: menu;
+        height: 1px;
+        list-style-type: none;
+        margin-top: -4%;
+    }
+    
+    .mainnav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    h1.tutorials {
+        margin-top: 2rem;
+    }
+    
+}
